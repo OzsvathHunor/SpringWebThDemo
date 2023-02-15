@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Termek leiras</title>
+    <style>
+        body{
+            background: aqua;
+        }
+        .container{
+            display: flex;
+            align-items: baseline;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img
+            src="https://picsum.photos/id/234/200/300"
+            data-th-src="${product.image}"
+            data-th-alt="${product.name}"
+    >
+</div>
+<h2>Termek neve: [[${product.name}]]</h2>
+<h3>Termek ara: [[${product.price}]] Ft</h3>
+<div class="container">
+<h3>Leiras:</h3>
+<p>Ez a termek szar! Ne vedd meg!...Csak vicceltem, vigyed occo mint a torma es naon naon hasznos!!!</p>
+</div>
+<button onclick="history.back()">Vissza</button>
+</body>
+</html>
